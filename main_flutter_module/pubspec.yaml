@@ -1,0 +1,35 @@
+name: main_flutter_module
+description: "A new Flutter project."
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  first_flutter_module:
+    path: modules/first_flutter_module
+
+  second_flutter_module:
+    path: modules/second_flutter_module
+
+
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+
+flutter:
+
+  uses-material-design: true
+
+  module:
+    androidX: true
+    androidPackage: com.example.main_flutter_module
+    iosBundleIdentifier: com.example.mainFlutterModule
